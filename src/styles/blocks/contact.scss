@@ -1,0 +1,81 @@
+.contact {
+  @include pageGrid;
+
+  &__title {
+    grid-column: 1 / -1;
+
+    @include onTablet {
+      grid-column: 1 / -1;
+    }
+
+    @include onDesktop {
+      font-size: 48px;
+      grid-column: 1 / -1;
+    }
+  }
+
+  &__form {
+    grid-column: 1 / -1;
+
+    @include onTablet {
+      grid-column: 1 / -1;
+    }
+
+    @include onDesktop {
+      grid-column: 1 / 7;
+    }
+
+    &--btn {
+      width: 100%;
+      margin-top: 16px;
+      margin-bottom: 48px;
+      padding: 14.5px 0;
+      font-size: 16px;
+      line-height: 27px;
+      border: 1px solid transparent;
+      border-radius: 8px;
+
+      background-color: #1b2129;
+      color: #fff;
+
+      @include hover(transform, scale(1.2));
+
+      &:hover {
+        background-color: #010810;
+      }
+
+      @include onTablet {
+        margin-bottom: 80px;
+      }
+
+      @include onDesktop {
+        margin-bottom: 0;
+      }
+    }
+  }
+}
+
+.form-group {
+  margin-bottom: 16px;
+  @include hover(transform, scale(1.2));
+
+  &__input:hover {
+    border: 2px solid #f98921;
+  }
+}
+
+.contact__form input,
+.contact__form textarea {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 14px 16px;
+  border: 1px solid transparent;
+  border-radius: 8px;
+  font-size: 14px;
+  line-height: 140%;
+  background: #f9f9f9;
+}
+
+.contact__form textarea {
+  min-height: 148px;
+}
