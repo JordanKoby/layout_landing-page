@@ -1,15 +1,16 @@
 .contact {
-  @include pageGrid;
+  @include page-grid;
 
   &__title {
     grid-column: 1 / -1;
 
-    @include onTablet {
+    @include on-tablet {
       grid-column: 1 / -1;
     }
 
-    @include onDesktop {
+    @include on-desktop {
       font-size: 48px;
+
       grid-column: 1 / -1;
     }
   }
@@ -17,11 +18,11 @@
   &__form {
     grid-column: 1 / -1;
 
-    @include onTablet {
+    @include on-tablet {
       grid-column: 1 / -1;
     }
 
-    @include onDesktop {
+    @include on-desktop {
       grid-column: 1 / 7;
     }
 
@@ -44,11 +45,11 @@
         background-color: #010810;
       }
 
-      @include onTablet {
+      @include on-tablet {
         margin-bottom: 80px;
       }
 
-      @include onDesktop {
+      @include on-desktop {
         margin-bottom: 0;
       }
     }
@@ -57,6 +58,7 @@
 
 .form-group {
   margin-bottom: 16px;
+
   @include hover(transform, scale(1.2));
 
   &__input:hover {

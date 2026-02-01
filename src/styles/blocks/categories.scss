@@ -1,6 +1,6 @@
 .categories {
   &__title {
-    @include onTablet {
+    @include on-tablet {
       width: 50%;
     }
   }
@@ -25,13 +25,13 @@
         background-color: #1b2129;
       }
 
-      @include onDesktop {
+      @include on-desktop {
         width: auto;
         padding: 14.5px 133px;
       }
     }
 
-    @include onTablet {
+    @include on-tablet {
       row-gap: 56px;
     }
   }
@@ -39,17 +39,18 @@
 
 .category {
   &__photos {
-    @include pageGrid;
+    @include page-grid;
+
     margin-bottom: 16px;
   }
   &__link {
     @include hover(transform, scale(1.1));
 
-    @include onTablet {
+    @include on-tablet {
       grid-column: span 3;
     }
 
-    @include onDesktop {
+    @include on-desktop {
       grid-column: span 6;
     }
   }
