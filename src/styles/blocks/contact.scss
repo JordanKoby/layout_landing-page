@@ -59,8 +59,6 @@
 .form-group {
   margin-bottom: 16px;
 
-  @include hover(transform, scale(1.2));
-
   &__input:hover {
     border: 2px solid #f98921;
   }
