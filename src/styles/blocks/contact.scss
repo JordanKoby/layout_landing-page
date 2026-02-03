@@ -60,7 +60,8 @@
   margin-bottom: 16px;
 
   &__input:hover {
-    border: 2px solid #f98921;
+    border-color: #f98921;
+    outline: none;
   }
 }
 
@@ -78,4 +79,6 @@
 
 .contact__form textarea {
   min-height: 148px;
+  resize: none;
+  overflow: auto;
 }
