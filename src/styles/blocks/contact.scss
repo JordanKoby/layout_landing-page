@@ -36,14 +36,7 @@
       border: 1px solid transparent;
       border-radius: 8px;
 
-      background-color: #1b2129;
-      color: #fff;
-
-      @include hover(transform, scale(1.2));
-
-      &:hover {
-        background-color: #010810;
-      }
+     @include button-styles;
 
       @include on-tablet {
         margin-bottom: 80px;

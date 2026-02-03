@@ -55,3 +55,16 @@
     --columns: 12;
   }
 }
+
+@mixin button-styles {
+  background-color: #f98921;
+  color: #fff;
+
+  &:hover {
+    background-color: #1b2129;
+  }
+
+  &:active {
+    background-color: #010810;
+  }
+}
